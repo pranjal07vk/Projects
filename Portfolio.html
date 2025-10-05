@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+
+
+/* hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77);
+  background-size: 600% 600%;
+  animation: gradientBG 30s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid orange;
+  margin-bottom: 20px;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: orange;
+  margin: 0;
+  text-shadow: 0 0 10px orange, 0 0 20px orange;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.8;
+  text-shadow: 0 0 5px white;
+}
+
+    </style>
+</head>
+<body>
+    
+    
+    <!-- hero section -->
+    <section class="hero">
+  <div class="hero-content">
+    <img src="your-photo.png" alt="Pranjal" class="hero-photo">
+    <h1>Pranjal Chaudhary</h1>
+    <p>Web Developer & Tech Enthusiast</p>
+  </div>
+</section>
+
+</body>
+</html>
